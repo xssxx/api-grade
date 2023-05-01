@@ -36,7 +36,7 @@ export const getGrade = async (req, res) => {
     }
 
     const response = await axios.get(
-      "https://myapi.ku.th/std-profile/checkGrades?idcode=6510450593",
+      "https://myapi.ku.th/std-profile/checkGrades",
       { headers: { "x-access-token": req.session.token } }
     );
 
